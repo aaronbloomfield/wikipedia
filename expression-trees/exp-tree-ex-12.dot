@@ -1,0 +1,40 @@
+digraph G {
+	node [fontname="Helvetica",shape=circle];
+
+	mult [label="*"];
+	div [label="/"];
+	plus [label="+"];
+	minus [label="-"];
+	caret [label="^"];
+	hidden1 [label="",style=invis];
+	hidden2 [label="",style=invis];
+	hidden3 [label="",style=invis];
+	hidden4 [label="",style=invis];
+	hidden5 [label="",style=invis];
+	hidden6 [label="",style=invis];
+
+	mult -> div;
+	mult -> hidden1 [style=invis];
+	mult -> caret;
+	{rank=same div -> hidden1 -> caret [style=invis]};
+	
+	div -> plus;
+	div -> hidden2 [style=invis];
+	div -> minus;
+	{rank=same plus -> hidden2 -> minus [style=invis]};
+	
+	plus -> 5;
+	plus -> hidden3 [style=invis];
+	plus -> z;
+	{rank=same 5 -> hidden3 -> z [style=invis]};
+
+	minus -> 8;
+	minus -> hidden4 [style=invis];
+	minus -> hidden5 [style=invis];
+	{rank=same 8 -> hidden4 -> hidden5 [style=invis]};
+
+	caret -> 4;
+	caret -> hidden6 [style=invis];
+	caret -> 2;
+	{rank=same 4 -> hidden6 -> hidden2 [style=invis]};
+}

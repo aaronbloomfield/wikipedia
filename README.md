@@ -9,4 +9,4 @@ As per the Wikipedia [Terms of Use](https://wikimediafoundation.org/wiki/Terms_o
 Contents
 --------
 
-- The images for [Binary expression trees](https://en.wikipedia.org/wiki/Binary_expression_tree)
+- The images for the [Binary expression trees](https://en.wikipedia.org/wiki/Binary_expression_tree) article.  The extra steps for the construction are not shown in that article, but are included in this repo.

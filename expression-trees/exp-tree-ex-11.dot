@@ -1,0 +1,25 @@
+digraph G {
+	node [fontname="Helvetica",shape=circle];
+
+	plus1 [label="+"];
+	plus2 [label="+"];
+	mult [label="*"];
+	hidden1 [label="",style=invis];
+	hidden2 [label="",style=invis];
+	hidden3 [label="",style=invis];
+
+	plus1 -> mult;
+	plus1 -> hidden1 [style=invis];
+	plus1 -> 7;
+	{rank=same mult -> hidden1 -> 7 [style=invis]};
+	
+	mult -> plus2;
+	mult -> hidden2 [style=invis];
+	mult -> c;
+	{rank=same plus2 -> hidden2 -> c [style=invis]};
+	
+	plus2 -> a;
+	plus2 -> hidden3 [style=invis];
+	plus2 -> b;
+	{rank=same a -> hidden3 -> b [style=invis]};
+}
