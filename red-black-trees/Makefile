@@ -5,4 +5,5 @@ graphs:
 	@ls *.dot | sed s/.dot//g | awk '{print "dot -Tpng -Kneato "$$1".dot -o "$$1".png"}' | bash
 
 clean:
-	/bin/rm -f *.ps *.png
+	/bin/rm -f *.ps *.png *~
+

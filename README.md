@@ -10,4 +10,4 @@ Contents
 --------
 
 - The images for the [Binary expression trees](https://en.wikipedia.org/wiki/Binary_expression_tree) article.  The extra steps for the construction are not shown in that article, but are included in this repo.  These images are generated using [GraphViz](http://www.graphviz.org/); see the Makefile in that directory for the exact commands.
-- The insertion case images for the [Red-black tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree) article, which were also created using [GraphViz](http://www.graphviz.org/).  This requires a fairly recent version of GraphViz for the 'rarrow' shape, and requires the `-Kneato` flag for the proper layout; see the Makefile in that directory for the exact commands.
+- The insertion and removal case images for the [Red-black tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree) article, which were also created using [GraphViz](http://www.graphviz.org/).  This requires a fairly recent version of GraphViz for the 'rarrow' shape, and requires the `-Kneato` flag for the proper layout; see the Makefile in that directory for the exact commands.

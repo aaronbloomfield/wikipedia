@@ -5,7 +5,7 @@ digraph G {
 	P1 [style=filled,label="P",fillcolor=red,fontcolor=white,pin=true,pos="2,1.75"];
 	U1 [style=filled,label="U",fillcolor=red,fontcolor=white,pin=true,pos="4,1.75"];
 	N1 [style=filled,label="N",fillcolor=red,fontcolor=white,pin=true,pos="1.5,1"];
-	dot1 [style=filled,label="",fillcolor=black,pin=true,pos="1,0.25",width=0.2	      ];
+	dot1 [style=filled,label="",fillcolor=black,pin=true,pos="1,0.25",width=0.2];
 	dot2 [style=filled,label="",fillcolor=black,pin=true,pos="2,0.25",width=0.2];
 	dot3 [style=filled,label="",fillcolor=black,pin=true,pos="2.5,1",width=0.2];
 	dot4 [style=filled,label="",fillcolor=black,pin=true,pos="3.5,1",width=0.2];

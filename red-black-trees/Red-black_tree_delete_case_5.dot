@@ -1,0 +1,52 @@
+digraph G {
+	node [fontname="Helvetica-bold",shape=circle];
+
+	S1 [style=filled,label="S",fillcolor=black,fontcolor=white,pin=true,pos="4,1.75"];
+	SL1 [style=filled,label="S",fillcolor=red,fontcolor=white,pin=true,pos="3.5,1"];
+	SR1 [style=filled,label="S",fillcolor=black,fontcolor=white,pin=true,pos="4.5,1"];
+	dot1 [style=filled,label="",fillcolor=black,pin=true,pos="3.2,0.25",width=0.2];
+	dot2 [style=filled,label="",fillcolor=black,pin=true,pos="3.8,0.25",width=0.2];
+	dot3 [label="",pin=true,pos="4.2,0.25",width=0.2,style=invis];
+	dot4 [label="",pin=true,pos="4.8,0.25",width=0.2,style=invis];
+	tri1 [label="1",pin=true,pos="3.2,0",shape=triangle,fixedsize=true,width=0.3];
+	tri2 [label="2",pin=true,pos="3.8,0",shape=triangle,fixedsize=true,width=0.3];
+	tri3 [label="3",pin=true,pos="4.24,0.09",shape=triangle,fixedsize=true,width=0.3];
+	tri4 [label="4",pin=true,pos="4.76,0.09",shape=triangle,fixedsize=true,width=0.3];
+
+	// subscripts are not working right with my version of graphviz
+	subscript1 [label="L",pin=true,fontcolor=white,shape=plaintext,fontsize=10,pos="3.62,0.94"];
+	subscript2 [label="R",pin=true,fontcolor=white,shape=plaintext,fontsize=10,pos="4.62,0.94"];
+	
+	S1 -> SL1;
+	S1 -> SR1;
+	SL1 -> dot1;
+	SL1 -> dot2;
+	SR1 -> dot3;
+	SR1 -> dot4;
+	
+	arrow [label="",pin=true,pos="5.5,1.25",shape=rarrow,fixedsize=true,width=1,style=filled,fillcolor=blue];
+	
+	S2 [style=filled,label="S",fillcolor=red,fontcolor=white,pin=true,pos="7,1.75"];
+	SL2 [style=filled,label="S",fillcolor=black,fontcolor=white,pin=true,pos="6.5,2.5"];
+	SR2 [style=filled,label="S",fillcolor=black,fontcolor=white,pin=true,pos="7.5,1"];
+	dot1b [style=filled,label="",fillcolor=black,pin=true,pos="6.2,1.75",width=0.2];
+	dot2b [style=filled,label="",fillcolor=black,pin=true,pos="6.7,1",width=0.2];
+	dot3b [label="",pin=true,pos="7.2,0.25",width=0.2,style=invis];
+	dot4b [label="",pin=true,pos="7.8,0.25",width=0.2,style=invis];
+	tri1b [label="1",pin=true,pos="6.2,1.5",shape=triangle,fixedsize=true,width=0.3];
+	tri2b [label="2",pin=true,pos="6.7,0.75",shape=triangle,fixedsize=true,width=0.3];
+	tri3b [label="3",pin=true,pos="7.24,0.09",shape=triangle,fixedsize=true,width=0.3];
+	tri4b [label="4",pin=true,pos="7.76,0.09",shape=triangle,fixedsize=true,width=0.3];
+
+	// subscripts are not working right with my version of graphviz
+	subscript3 [label="L",pin=true,fontcolor=white,shape=plaintext,fontsize=10,pos="6.62,2.44"];
+	subscript4 [label="R",pin=true,fontcolor=white,shape=plaintext,fontsize=10,pos="7.62,0.94"];
+
+	SL2 -> S2;
+	S2 -> SR2;
+	SL2 -> dot1b;
+	S2 -> dot2b;
+	SR2 -> dot3b;
+	SR2 -> dot4b;
+
+}
